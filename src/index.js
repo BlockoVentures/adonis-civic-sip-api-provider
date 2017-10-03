@@ -12,10 +12,10 @@ Civic.setClient = function(appId, prvKey, appSecret) {
 };
 
 Civic.getUser = function(jwt) {
-    civicClient.exchangeCode(jwt).then(function(userData) {
+    return civicClient.exchangeCode(jwt).then(function(userData) {
 
         let result = {};
-        data.reduce((previous,item) => {
+        userData.data.reduce((previous,item) => {
 
             if(!item.isValid || !item.isOwner) {
                 // TODO: Throw Exception
@@ -28,6 +28,6 @@ Civic.getUser = function(jwt) {
             result[label] = item.value
         }, null);
 
-        return {id: userData.userId, email: email, phonenumber: phonenumber}
+        return {id: userData.userId, email: result.email, phonenumber: result.phoneNumber}
     });
 };
