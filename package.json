@@ -1,0 +1,30 @@
+{
+  "name": "adonis-civic-sip-api-provider",
+  "version": "1.0.0",
+  "description": "Civic provider for adonis framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlockoVentures/adonis-civic-sip-api-provider.git"
+  },
+  "keywords": [
+    "adonis",
+    "adonisj",
+    "civic"
+  ],
+  "author": "Blocko Ventures",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlockoVentures/adonis-civic-sip-api-provider/issues"
+  },
+  "homepage": "https://github.com/BlockoVentures/adonis-civic-sip-api-provider#readme",
+  "dependencies": {
+    "civic-sip-api": "^0.4.3"
+  },
+  "devDependencies": {
+    "adonis-fold": "^3.0.3"
+  }
+}
