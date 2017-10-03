@@ -28,6 +28,6 @@ Civic.getUser = function(jwt) {
             result[label] = item.value
         }, null);
 
-        return {userId: userData.userId, email: email, phonenumber: phonenumber}
+        return {id: userData.userId, email: email, phonenumber: phonenumber}
     });
 };
